@@ -2,7 +2,12 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+:root {
+    --primary: #c4cbbc;
+    --secondary: #010111;
 
+
+}
 html {
     font-family: 'Cabin', sans-serif;
     line-height: 1.6;
@@ -11,11 +16,17 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--primary);
 }
 /*=========Container=========*/
 .container {
-    max-width: 100rem;
+    max-width: 80rem;
     margin: 0 auto;
     padding: 0;
+
+}
+/*=========header=========*/
+header {
+    display: flex;
 
 }
