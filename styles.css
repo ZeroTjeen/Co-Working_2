@@ -4,8 +4,9 @@
 }
 :root {
     --primary: #c4cbbc;
-    --secondary: #010111;
-
+    --secondary: #FAFAFA;
+    --tertairy: #587D70;
+    --quaternairy: #F6ADB2;
 
 }
 html {
@@ -16,7 +17,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--primary);
+    background-color: var(--secondary);
 }
 /*=========Container=========*/
 .container {
@@ -27,6 +28,42 @@ body {
 }
 /*=========header=========*/
 header {
+    background: var(--primary);
+    align-items: center;
+}
+header div {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*=========main=========*/
+main {
+    display: flex;
+    justify-content: center;
+}
 
+
+
+
+/*=========game=========*/
+.game_venster {
+    margin: 0;
+    padding: 0;
+    width: 1080px;
+    height: 720px;
+    background: #587D70;
+    position: relative;
+}
+#vloer {
+    position: absolute;
+    background: #573232;
+    left: 0;
+    bottom: 0;
+    width: 1080px;
+    height: 150px;
+}
+
+/*=========footer=========*/
+footer {
+    background: var(--primary);
 }
