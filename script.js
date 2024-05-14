@@ -58,6 +58,7 @@ restart_quiz.onclick = ()=>{
     startTimerLine(widthwaarde); // Roept de startTimerLine functie aan
     timeText.textContent = "tijd over"; // Verandert de tekst van timeText naar "Tijd Over"
     next_btn.classList.remove("toon"); // Verberg de volgende knop
+    verbergTip(); // Verberg tip
 }
 
 // Als de quitQuiz-knop wordt geklikt
@@ -81,6 +82,7 @@ next_btn.onclick = ()=>{
         startTimerLine(widthwaarde); // Roept de startTimerLine functie aan
         timeText.textContent = "tijd over"; // Verandert de tijdtekst naar "Tijd Over"
         next_btn.classList.remove("toon"); // Verberg de volgende knop
+        verbergTip(); // Verberg tip
     }else{
         clearInterval(teller); // Wis teller
         clearInterval(tellerLine); // Wis tellerLine
@@ -143,6 +145,7 @@ function optionSelected(antwoord){
         option_lijst.children[i].classList.add("disabled"); // Eenmaal door gebruiker een optie is geselecteerd, worden alle opties uitgeschakeld
     }
     next_btn.classList.add("toon"); // Toon de volgende knop als gebruiker een optie heeft geselecteerd
+    toonTip(que_count);// toon tip
 }
 
 function toonresultaat(){
@@ -209,4 +212,23 @@ function queteller(index){
     // Maakt een nieuwe span tag aan en geeft het vraagnummer en totaal aantal vragen door
     let totalQueCounTag = '<span><p>'+ index +'</p> van de <p>'+ questions.length +'</p> Vragen</span>';
     bottom_ques_teller.innerHTML = totalQueCounTag;  // Voegt nieuwe span tag toe aan bottom_ques_teller
+}
+
+
+
+
+// toont tip
+function toonTip(index){
+    const tipText = questions[index].tip || "Geen tip beschikbaar.";
+    const tipBox = document.createElement("div");
+    tipBox.className = "tip_box";
+    tipBox.innerHTML = '<span>Tip: '+ tipText +'</span>';
+    quiz_box.appendChild(tipBox);
+}
+// verwijderd tip
+function verbergTip(){
+    const tipBox = document.querySelector(".tip_box");
+    if(tipBox){
+        tipBox.remove();
+    }
 }
