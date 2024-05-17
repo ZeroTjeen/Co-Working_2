@@ -1,0 +1,216 @@
+/* Base styles */
+:root {
+    --button-color: #b9c9b4;
+    --background-color: #DFE6DD;
+    --text-color: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #DFE6DD; /* Change background color */
+}
+
+.escape-room {
+    position: relative;
+    width: 100%; /* Change width to 100% */
+    max-width: 880px; /* Set max-width */
+    height: auto; /* Allow height to adjust based on content */
+    border: 2px solid #333;
+    background-color: #FFF; /* Change background color */
+}
+
+.background {
+    width: 100%;
+    height: auto; /* Allow height to adjust based on content */
+    object-fit: cover;
+}
+
+.draggable {
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #333;
+    cursor: move;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.draggable:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.drop-zone {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px dashed #333333e4;
+    border-radius: 10%;
+}
+
+/* Position the drop zones in your kitchen background */
+/* Adjust positioning as needed */
+
+/* Correct placement indicator */
+.correct {
+    background-color: rgba(194, 216, 194, 0.8) !important;
+}
+
+.draggable img {
+    width: 50px;
+    height: auto;
+    pointer-events: none;
+}
+
+.draggable {
+    position: absolute;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #333;
+    cursor: move;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.draggable:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#message-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.message-bubble {
+    background-color: #92AA8A; /* Change bubble background color */
+    color: #000000; /* Change text color */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    max-width: 300px;
+    text-align: center;
+    left: 50%;
+}
+
+/* Position the draggable items in a row */
+#Snijplank { top: 102%; left: 5%; }
+#Waterbeker { top: 102%; left: 15%; }
+#Zout { top: 102%; left: 25%; }
+#kookpot { top: 102%; left: 45%; }
+#pan { top: 102%; left: 35%; }
+#bestek { top: 102%; left: 55%; }
+#vergiet { top: 102%; left: 65%; }
+#thermovles { top: 102%; left: 75%; }
+#broodmess { top: 102%; left: 85%; }
+
+/* Drop zones */
+#drop-Snijplank { top: 40%; left: 10%; }
+#drop-Waterbeker { top: 40%; left: 25%; }
+#drop-Zout { top: 15%; left: 40%; }
+#drop-kookpot { top: 65%; left: 10%; }
+#drop-pan { top: 15%; left: 55%; }
+#drop-bestek { top: 65%; left: 65%; }
+#drop-vergiet { top: 40%; left: 55%; }
+#drop-thermovles { top: 40%; left: 70%; }
+#drop-mess { top: 40%; left: 40%; }
+
+#exit-button {
+    position: absolute;
+    top: 40px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1001; /* Ensure the button is above other elements */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: var(--button-color); /* Button background color */
+    border: 2px solid #333; /* Button border */
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer; /* Cursor style */
+    color: var(--text-color); /* Button text color */
+}
+
+
+#exit-button:hover {
+    background-color: #4a4949b2;
+    color: #fff;
+}
+
+#logo {
+    position: absolute;
+    top: 40px; /* Adjust as needed */
+    left: 5%;
+    z-index: 1001; /* Ensure the logo is above other elements */
+    width: 100px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .escape-room {
+        max-width: 90%; /* Adjust max-width for smaller screens */
+    }
+
+    /* Adjust positioning of draggable items for smaller screens */
+    .draggable {
+        padding: 3px; /* Adjust padding */
+        font-size: 12px; /* Adjust font size */
+    }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 1200px) {
+
+    #logo {
+        position: absolute;
+        top: 40px; /* Adjust as needed */
+        left: 21%;
+        z-index: 1001; /* Ensure the logo is above other elements */
+        width: 100px; /* Adjust width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #exit-button {
+        position: absolute;
+        top: 40px; /* Adjust as needed */
+        right: 21%; /* Adjust as needed */
+        z-index: 1001; /* Ensure the button is above other elements */
+        padding: 10px 20px; /* Adjust padding as needed */
+        background-color: var(--button-color); /* Button background color */
+        border: 2px solid #333; /* Button border */
+        border-radius: 5px; /* Button border radius */
+        cursor: pointer; /* Cursor style */
+        color: var(--text-color); /* Button text color */
+    }
+
+    .message-bubble {
+        background-color: #92AA8A; /* Change bubble background color */
+        color: #000000; /* Change text color */
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+        max-width: 500px;
+        text-align: center;
+        left: 50%;
+    }
+    /* Adjust positioning of draggable items for larger screens */
+    .draggable {
+        padding: 3px; /* Adjust padding */
+        font-size: 12px; /* Adjust font size */
+    }
+}

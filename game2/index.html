@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berghoff Escape Room</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <img src="logo.png" alt="Logo" id="logo" style="width: 150px;">
+    <button id="exit-button">Exit</button>
+    <div id="message-container"></div> <!-- Message container -->
+    <div id="timing-line"></div>
+
+
+    <div class="escape-room">
+        <img src="kitchen.jpg" alt="Kitchen Background" class="background">
+        <div class="draggable-container">
+            <div class="draggable" id="Snijplank"><img src="./Snijplank-removebg-preview.png" alt="Snijplank"></div>
+            <div class="draggable" id="Waterbeker"><img src="water_beker-removebg-preview.png" alt="Waterbeker"></div>
+            <div class="draggable" id="Zout"><img src="./zout_en_peper-removebg-preview.png" alt="Zout en peper"></div>
+            <div class="draggable" id="kookpot"><img src="./kookpot-removebg-preview.png" alt="kookpot"></div>
+            <div class="draggable" id="pan"><img src="./pan-removebg-preview.png" alt="pan"></div>
+            <div class="draggable" id="bestek"><img src="./bestekset-removebg-preview.png" alt="bestek"></div>
+            <div class="draggable" id="vergiet"><img src="./vergiet-removebg-preview.png" alt="vergiet"></div>
+            <div class="draggable" id="thermovles"><img src="./thermovles-removebg-preview.png" alt="thermovles"></div>
+            <div class="draggable" id="broodmess"><img src="./broodmess-removebg-preview.png" alt="broodmess"></div>
+        </div>
+    
+        <!-- Drop zones -->
+        <div class="drop-zone" id="drop-Snijplank" data-target="Snijplank"></div>
+        <div class="drop-zone" id="drop-Waterbeker" data-target="Waterbeker"></div>
+        <div class="drop-zone" id="drop-Zout" data-target="Zout"></div>
+        <div class="drop-zone" id="drop-kookpot" data-target="kookpot"></div>
+        <div class="drop-zone" id="drop-pan" data-target="pan"></div>
+        <div class="drop-zone" id="drop-bestek" data-target="bestek"></div>
+        <div class="drop-zone" id="drop-vergiet" data-target="vergiet"></div>
+        <div class="drop-zone" id="drop-thermovles" data-target="thermovles"></div>
+        <div class="drop-zone" id="drop-mess" data-target="broodmess"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+:root {
+    --button-color: #b9c9b4;
+    --background-color: #DFE6DD;
+    --text-color: #000000;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: var(--text-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.discount-offer, .next-steps, .share-buttons, .feedback, .related-products {
+    margin-bottom: 30px;
+}
+
+.social-button, .feedback-button, .related-product-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.social-button:hover, .feedback-button:hover, .related-product-link:hover {
+    background-color: #9baa95;
+    color: #fff;
+}
+
+.feedback-button {
+    background-color: var(--button-color);
+}
+
+.related-product-link {
+    background-color: var(--button-color);
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+    float: right;
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#exit-button {
+    position: absolute;
+    top: 40px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1001; /* Ensure the button is above other elements */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: var(--button-color); /* Button background color */
+    border: 2px solid #333; /* Button border */
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer; /* Cursor style */
+    color: var(--text-color); /* Button text color */
+}
+
+#exit-button:hover {
+    background-color: #4a4949b2;
+    color: #fff;
+}
+
+.photo {
+    float: right;
+    width: 200px;
+    margin-left: 20px;
+    animation: movePhoto 4s infinite alternate; /* Apply animation */
+}
+
+@keyframes movePhoto {
+    0% {
+        transform: translateX(0); /* Initial position */
+    }
+    100% {
+        transform: translateX(-5px); /* Move photo to the left */
+    }
+}
+
+
+
+/* Media query for larger screens */
+@media screen and (min-width: 1200px) {
+
+    #exit-button {
+        position: absolute;
+        top: 40px; /* Adjust as needed */
+        right: 24%; /* Adjust as needed */
+        z-index: 1001; /* Ensure the button is above other elements */
+        padding: 10px 20px; /* Adjust padding as needed */
+        background-color: var(--button-color); /* Button background color */
+        border: 2px solid #333; /* Button border */
+        border-radius: 5px; /* Button border radius */
+        cursor: pointer; /* Cursor style */
+        color: var(--text-color); /* Button text color */
+    }
+}
+
