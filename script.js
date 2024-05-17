@@ -218,7 +218,7 @@ function queteller(index){
 
 
 // toont tip
-function toonTip(index){
+const toonTip = function(index){
     const tipText = questions[index].tip || "Geen tip beschikbaar.";
     const tipBox = document.createElement("div");
     tipBox.className = "tip_box";
@@ -226,7 +226,7 @@ function toonTip(index){
     quiz_box.appendChild(tipBox);
 }
 // verwijderd tip
-function verbergTip(){
+const verbergTip = function(){
     const tipBox = document.querySelector(".tip_box");
     if(tipBox){
         tipBox.remove();
