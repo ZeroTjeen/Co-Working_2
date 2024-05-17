@@ -9,19 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
         function onMouseDown(e) {
             e.preventDefault();
 
-            let shiftX = e.clientX - draggable.getBoundingClientRect().left;
-            let shiftY = e.clientY - draggable.getBoundingClientRect().top;
-
-            document.addEventListener('mousemove', onMouseMove);
-            document.addEventListener('mouseup', onMouseUp);
-
             function onMouseMove(e) {
                 moveAt(e.clientX, e.clientY);
             }
 
             function moveAt(clientX, clientY) {
-                draggable.style.left = clientX - shiftX + 'px';
-                draggable.style.top = clientY - shiftY + 'px';
+                draggable.style.position = 'absolute';
+                draggable.style.zIndex = 2000; // Ensure the draggable is above other elements
+                draggable.style.left = `${clientX}px`;
+                draggable.style.top = `${clientY}px`;
             }
 
             function onMouseUp() {
@@ -30,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 checkDrop(draggable);
             }
+
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
         }
 
         draggable.ondragstart = () => false;
@@ -132,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const allCorrect = Array.from(draggables).every(item => item.classList.contains('correct'));
             if (allCorrect) {
                 // Redirect to the korting page
-                window.location.href = 'korting.html'; // Adjust the path if needed
+                window.location.href = '../game2/Korting/korting.html';
             }
         } else {
             // Incorrect drop
@@ -147,4 +146,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // Redirect to the specified URL
         window.location.href = 'https://berghoff-belgium.be/';
     });
+});
+
+window.addEventListener('load', () => {
+    if (window.confetti) {
+        window.confetti.start();
+        setTimeout(() => {
+            window.confetti.stop();
+        }, 5000);
+    } else {
+        console.error('Confetti library not loaded.');
+    }
 });
