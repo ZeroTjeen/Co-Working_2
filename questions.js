@@ -1,5 +1,5 @@
 
-let questions = [
+export let questions = [
   {
     numb: 1,
     question: "Welk van deze verpakkingen is het meest milieuvriendelijke?",
