@@ -193,6 +193,7 @@ const startTimer = (time) => {
                 option_lijst.children[i].classList.add("disabled"); // Als gebruiker een optie heeft geselecteerd, schakel dan alle opties uit
             }
             next_btn.classList.add("toon"); // Toon de volgende knop als gebruiker een optie heeft geselecteerd
+            toonTip(que_count); // toon tip
         }
     }, 1000);
 }
