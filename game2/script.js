@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
             function moveAt(clientX, clientY) {
                 draggable.style.position = 'absolute';
                 draggable.style.zIndex = 2000; // Ensure the draggable is above other elements
-                draggable.style.left = `${clientX}px`;
-                draggable.style.top = `${clientY}px`;
+                draggable.style.left = `${clientX - 525}px`;
+                draggable.style.top = `${clientY - 250}px`;
             }
 
             function onMouseUp() {
