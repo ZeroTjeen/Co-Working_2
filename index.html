@@ -1,67 +1,32 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BergHoff</title>
-    <script src="/questions.js" type="module"></script>
-    <script src="/script.js" type="module"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>HoofdMenu</title>
 </head>
+
 <body>
-    <div class="start_btn"><button>Start De Quiz</button></div>
-    <div class="info_box">
-        <div class="info-title"><span>Regels van de Quiz!</span></div>
-        <div class="info-list">
-            <div class="info">1. Je hebt <span>30 seconden</span> de tijd / vraag.</div>
-            <div class="info">2. Eén maal geselecteerd kan je niet meer veranderen.</div>
-            <div class="info">3. Je kan maar 1 antwoord selecteren.</div>
-            <div class="info">4. Je kan de quiz niet verlaten als je begonnen bent.</div>
-            <div class="info">5. Je punten en je tip krijg je aan het einde van de quiz.</div>
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="logo berghoff">
         </div>
-        <div class="buttons">
-            <button class="quit">Sluit</button>
-            <button class="restart">Ga Verder</button>
-        </div>
-    </div>
-    <div class="quiz_box">
-        <header>
-            <div class="title">De ultime <span>BergHoff</span>  Quiz</div>
-            <div class="timer">
-                <div class="time_left_txt">Tijd over</div>
-                <div class="timer_sec">30</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container2">
+                <h1>Welkom</h1>
+                <p>kies het spel dat je wilt spelen.</p>
+                <div class="naastElkaar">
+                    <a href="/escaperoom/"><button class="startButton">Escaperoom</button></a>
+                    <a href="/quiz/"><button class="startButton">Quiz</button></a>
+                </div>
             </div>
-            <div class="time_line"></div>
-        </header>
-        <section>
-            <div class="que_text">
-                <!-- Hier worden vragen ingevoegd vanuit JavaScript -->
-            </div>
-            <div class="option_lijst">
-                <!-- Hier worden opties ingevoegd vanuit JavaScript -->
-            </div>
-        </section>
-        <footer>
-            <div class="total_que">
-                <!-- Hier wordt het vraagnummer ingevoegd vanuit JavaScript -->
-            </div>
-            <button class="next_btn">Volgende</button>
-        </footer>
-    </div>
-    <div class="resultaat_box">
-        <div class="icon">
-            <i class="fas fa-crown"></i>
         </div>
-        <div class="complete_text">Je hebt de Quiz voltooid</div>
-        <div class="score_text">
-            <!-- Hier wordt het resultaat van de score ingevoegd vanuit JavaScript -->
-        </div>
-        <div class="buttons">
-            <button class="restart">Opnieuw</button>
-            <button class="quit">Verlaat</button>
-        </div>
-    </div>
-    
+    </main>
+
 </body>
+
 </html>

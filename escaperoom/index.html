@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escaperoom</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="../images/logo.png" alt="logo berghoff">
+
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="startPage">
+                <a href="../"><button class="hoofdmenuButton">ga terug</button></a>
+                <h1>Welkom bij de Escaperoom</h1>
+                <p>sleep al de keukengerei naar zijn juiste plaats</p>
+                <button class="startButton">Start</button>
+            </div>
+
+            <div id="puzzelPage" class="hidden">
+                <button class="hoofdmenuButton">ga terug</button>
+                <button class="resetButton">reset</button>
+                <p class="puzzelTitel">Sleep het keukengerei naar de Juiste plekken in de keuken om te Ontsnappen</p>
+
+                <div id="objectsContainer">
+                    <div id="versleepbaar1" class="versleepbaar"><img src="../images/Snijplank-removebg-preview.png" alt="Snijplank"></div>
+                    <div id="versleepbaar2" class="versleepbaar"><img src="../images/water_beker-removebg-preview.png" alt="Waterbeker"></div>
+                    <div id="versleepbaar3" class="versleepbaar"><img src="../images/zout_en_peper-removebg-preview.png" alt="Zout en peper"></div>
+                    <div id="versleepbaar4" class="versleepbaar"><img src="../images/vergiet-removebg-preview.png" alt="vergiet"></div>
+                    <div id="versleepbaar5" class="versleepbaar"><img src="../images/pan-removebg-preview.png" alt="pan"></div>
+                    <div id="versleepbaar6" class="versleepbaar"><img src="../images/thermovles-removebg-preview.png"alt="thermovles"></div>
+                    <div id="versleepbaar7" class="versleepbaar"><img src="../images/bestekset-removebg-preview.png" alt="bestek"></div>
+                    <div id="versleepbaar8" class="versleepbaar"><img src="../images/broodmess-removebg-preview.png"alt="broodmess"></div>
+                    <div id="versleepbaar9" class="versleepbaar"><img src="../images/kookpot-removebg-preview.png" alt="kookpot"></div>
+                </div>
+
+                <div id="targetsContainer">
+                    <div id="target1" class="target"></div>
+                    <div id="target2" class="target"></div>
+                    <div id="target3" class="target"></div>
+                    <div id="target4" class="target"></div>
+                    <div id="target5" class="target"></div>
+                    <div id="target6" class="target"></div>
+                    <div id="target7" class="target"></div>
+                    <div id="target8" class="target"></div>
+                    <div id="target9" class="target"></div>
+                </div>
+                <p id="puzzelMessage"></p>
+            </div>
+
+            <div id="eindPagina" class="hidden">
+                <img src="../images/logo.png" alt="Logo" id="logo">
+                
+
+                <div class="container2">
+                    <h1>Escape Room Berghoff</h1>
+                    <p>Bedankt voor het spelen van de escape room. Je hebt het gehaald!</p>
+                    <p>Als beloning, geniet van een speciale korting op je volgende bezoek!</p>
+                </div>
+
+                <div class="discount-offer">
+                    <img src="../images/photo.png" alt="photo" class="photo">
+                    <h2>Speciale Aanbieding:</h2>
+                    <p>Krijg 20% korting op je volgende escape room-ervaring met de code: <strong>ESCAPE20</strong></p>
+                    <p>Opgelet! Deze aanbieding is slechts voor een beperkte tijd geldig.</p>
+                </div>
+
+                <div class="feedback">
+                    <h2>We Horen Graag van Je:</h2>
+                    <p>Deel je feedback met ons om ons te helpen de escape room-ervaring te verbeteren voor toekomstige
+                        spelers.
+                    </p>
+                    <a href="https://berghoff-belgium.be/pages/contact" class="feedback-button">Geef Feedback</a>
+                </div>
+                <button class="restartButton">Opnieuw Spelen</button>
+            </div>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>

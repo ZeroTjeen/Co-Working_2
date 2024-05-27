@@ -1,0 +1,276 @@
+/*Default*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+:root {
+    --text: #fff;
+    --mainbg: #c4cbbc;
+    --bg: #587d70;
+    --btnchange: #857d70;
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --text: #fdfdfd;
+            --mainbg: #333;
+            --bg: #315a4c;
+        }
+    }
+}
+body {
+    font-family: Verdana, Geneva, Tahoma;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: var(--mainbg);
+}
+
+
+/*Components*/
+h1 {
+    color: #333;
+}
+p {
+    font-size: 20px;
+}
+span {
+    font-size: 800px;
+}
+.hidden {
+    display: none !important;
+}
+.puzzelTitel {
+    font-size: 28px;
+    font-weight: 600;
+    position: absolute;
+    top: -4em;
+}
+#puzzelMessage {
+    position: absolute;
+    left: 50wh;
+    top: 0;
+    margin: 0;
+    font-size: 28px;
+
+}
+
+.naastElkaar {
+    display: flex;
+}
+/*Container*/
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+}
+/*Header*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    width: 100%;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/*Buttons*/
+button {
+    padding: .5rem 1.5rem;
+    margin: .5em;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--bg);
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 20px;
+}
+button:hover {
+    background-color: var(--btnchange);
+    transition: .3s ease-in-out;
+}
+.resetButton {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.hoofdmenuButton {
+    position: fixed;
+    left: 0;
+    top: 4em;
+}
+.restartButton {
+    position: absolute;
+    left: 50wh;
+    bottom: 5em;
+}
+
+
+/*Pagina's*/
+#startPage, #puzzelPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border: #333 solid;
+}
+#puzzelPage {
+    background-image: url(images/kitchen.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#objectsContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -6em;
+    gap: 20px;
+}
+
+
+
+/*Draggebles*/
+.versleepbaar {
+    
+    width: 70px;
+    height: 70px;
+    border: #0056b3 solid;
+    border-radius: 25px;
+    color: #333;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: move;
+    
+}
+.versleepbaar img {
+    width: 100%;
+    height: auto;
+    background: none;
+    pointer-events: none;
+}
+
+
+
+/*Targets*/
+.target {
+    width: 80px;
+    height: 80px;
+    border: 2px dashed #000;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#target1 {
+    top: 200px;
+    left: 25px;
+}
+#target2 {
+    top: 200px;
+    left: 200px;
+}
+#target3 {
+    top: 100px;
+    left: 350px;
+}
+#target4 {
+    top: 200px;
+    left: 450px;
+}
+#target5 {
+    top: 75px;
+    left: 450px;
+}
+#target6 {
+    top: 200px;
+    left: 575px;
+}
+#target7 {
+    top: 325px;
+    left: 550px;
+}
+#target8 {
+    top: 200px;
+    left: 325px;
+}
+#target9 {
+    top: 300px;
+    left: 80px;
+}
+
+
+
+
+
+.discount-offer, .next-steps, .share-buttons, .feedback, .related-products {
+    margin-bottom: 30px;
+}
+
+.social-button, .feedback-button, .related-product-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.social-button:hover, .feedback-button:hover, .related-product-link:hover {
+    background-color: #9baa95;
+    color: #fff;
+}
+
+.feedback-button {
+    background-color: var(--button-color);
+}
+
+.related-product-link {
+    background-color: var(--button-color);
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--text);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+    float: right;
+    width: 200px;
+    margin-left: 20px;
+    animation: movePhoto 4s infinite alternate; /* Apply animation */
+}
+
+@keyframes movePhoto {
+    0% {
+        transform: translateX(0); /* Initial position */
+    }
+    100% {
+        transform: translateX(-5px); /* Move photo to the left */
+    }
+}
