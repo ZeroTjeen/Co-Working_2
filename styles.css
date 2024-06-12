@@ -33,15 +33,15 @@ body {
 h1 {
     color: #333;
 }
+
 p {
     font-size: 20px;
 }
-span {
-    font-size: 800px;
-}
+
 .hidden {
     display: none !important;
 }
+
 .puzzelTitel {
     font-size: 28px;
     font-weight: 600;
@@ -65,8 +65,8 @@ span {
     max-width: 80rem;
     margin: 0 auto;
     padding: 0 1rem;
-
 }
+
 /*Header*/
 header {
     position: fixed;
@@ -106,8 +106,7 @@ button:hover {
 }
 .restartButton {
     position: absolute;
-    left: 50wh;
-    bottom: 5em;
+    right: 50%;
 }
 
 
@@ -213,9 +212,6 @@ button:hover {
 }
 
 
-
-
-
 .discount-offer, .next-steps, .share-buttons, .feedback, .related-products {
     margin-bottom: 30px;
 }
@@ -251,12 +247,13 @@ button:hover {
 
 .container2 {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 130px;
     padding: 20px;
     text-align: center;
-    background-color: var(--text);
+    background-color:#fdfdfdac;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 .photo {
@@ -273,4 +270,57 @@ button:hover {
     100% {
         transform: translateX(-5px); /* Move photo to the left */
     }
+}
+
+.puzzelTitel {
+    font-size: 15px;
+    position: absolute;
+    top: -2.5em;
+    background-color:#ffffff;
+    padding-left: 4em;
+    padding-right: 4em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+    .puzzelTitel {
+        font-size: 12px;
+        top: -2.7em;
+    }
+
+    .container2 {
+        margin-top: 500px;
+    }
+    
+
+}
+.tip_box {
+    position: fixed;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    max-width: 300px; /* Adjust the max-width as needed */
+    font-size: 14px;
+    z-index: 1000; /* Ensure the tip box appears above other elements */
+    text-align: center;
+}
+
+.tip_box span {
+    font-weight: bold;
+}
+
+#puzzelMessage div {
+    margin: 5px 0; /* Add margin between messages */
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+.clickableCode {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
 }
