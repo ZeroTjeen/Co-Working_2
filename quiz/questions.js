@@ -10,7 +10,7 @@ export let questions = [
       "Herbruikbare fles",
       "Glas"
     ],
-    tip: ""
+    tip: "Kies voor een herbruikbare fles om je impact op het milieu te verminderen. Herbruikbare flessen verminderen afvalproductie door hergebruik, wat bijdraagt aan een duurzamere levensstijl. Kies bij voorkeur flessen gemaakt van materialen zoals roestvrij staal, glas of duurzaam plastic, en vermijd wegwerpflessen."
   },
   {
     numb: 2,
@@ -22,7 +22,7 @@ export let questions = [
       "1994",
       "2001"
     ],
-    tip: "test tip 2"
+    tip: "Berghoff werd oorspronkelijk opgericht in 1994. Sindsdien heeft het bedrijf zich ontwikkeld tot een wereldwijd bekend merk dat bekend staat om zijn innovatieve keuken- en kookgerei."
   },
   {
     numb: 3,
@@ -34,11 +34,11 @@ export let questions = [
       "kookade",
       "Berghoff"
     ],
-    tip: "test tip 3"
+    tip: "Berghoff begon oorspronkelijk onder de naam Euro-Household voordat het werd omgedoopt tot het huidige Berghoff. Dit benadrukt hoe het merk zich heeft aangepast en geëvolueerd om zijn positie in de markt voor keuken- en kookgerei te versterken."
   },
   {
     numb: 4,
-    question: "In hoeveel landen is het bedrijf te vinden?",
+    question: "In hoeveel landen is het bedrijf momenteel te vinden?",
     antwoord: "+60",
     options: [
       "+700",
@@ -46,7 +46,7 @@ export let questions = [
       "+60",
       "+20"
     ],
-    tip: "test tip 4"
+    tip: "Berghoff is een wereldwijd merk dat zijn kwaliteitsproducten aanbiedt in maar liefst 60 landen. Dit geeft aan hoe populair en vertrouwd het merk is op internationaal niveau, dankzij de combinatie van innovatief design, functionaliteit en duurzaamheid."
   },
   {
     numb: 5,
@@ -100,26 +100,26 @@ export let questions = [
   },
   {
     numb: 9,
-    question: "Hoe ga je duurzaam aan de slag in je keuken?",
-    antwoord: "juist antwoord of the question is here",
+    question: "Wat is de beste manier om je Berghoff messen scherp te houden?",
+    antwoord: "Gebruik een messenslijper of aanzetstaal regelmatig",
     options: [
-      "Een schuursponsje",
-      "Een microvezeldoekje",
-      "Het gebruik maken van Cif",
-      "Soda"
+      "Bewaar ze los in een lade",
+      "Gebruik een messenslijper of aanzetstaal regelmatig",
+      "Was ze in de vaatwasser",
+      "Gebruik ze alleen op glazen snijplanken"
     ],
-    tip: "test tip 9"
+    tip: "Houd je messen scherp door ze regelmatig te slijpen en op te bergen in een messenblok of op een magneetstrip. Dit voorkomt beschadigingen aan de snijkant en verlengt de levensduur van je messen."
   },
   {
     numb: 10,
-    question: "Waar is het hoofdkantoor van BergHOFF gevestigd",
-    antwoord: "juist antwoord of the question is here",
+    question: "Wat is de aanbevolen manier om je Berghoff gietijzeren kookgerei te onderhouden?",
+    antwoord: "Smeer het na elke reiniging in met een dun laagje olie",
     options: [
-      "Brugge, België",
-      "Berlijn, Duitsland",
-      " New York City, Verenigde Staten",
-      "Gent , België"
+      "Was het met zeep en droog het aan de lucht",
+      "Laat het weken in water voor eenvoudige reiniging",
+      "Smeer het na elke reiniging in met een dun laagje olie",
+      "Gebruik staalwol om aangebakken voedsel te verwijderen"
     ],
-    tip: "test tip 10"
+    tip: "Na het schoonmaken van je gietijzeren kookgerei, droog het grondig en smeer het in met een dun laagje olie om roestvorming te voorkomen en de natuurlijke antiaanbaklaag te behouden. Gebruik geen zeep, want dit kan de beschermende laag verwijderen."
   },
 ];
