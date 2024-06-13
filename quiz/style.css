@@ -313,6 +313,7 @@ section .option_lijst .option .icon{
     border-radius: 25px;
     background: var(--btnchange);
 }
+
 footer{
     height: 60px;
     padding: 0 30px;
