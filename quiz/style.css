@@ -306,6 +306,13 @@ section .option_lijst .option .icon{
     border-color: #a42834;
 }
 
+.tip_box {
+    padding: 1em;
+    color: var(--text);
+    border: var(--bg) solid;
+    border-radius: 25px;
+    background: var(--btnchange);
+}
 footer{
     height: 60px;
     padding: 0 30px;
